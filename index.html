@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>CafeSite</title>
+  <meta name="description" content="こちらは実際には存在しないカフェのサンプルサイトです。
+  サイトを閲覧されるお客様が見やすいUIデザインや、今にも香りがしてきそうなメニューの画像、
+  心地よさそうな店内空間の画像を使用しました。zぜひ閲覧して頂けたら嬉しく思います。">
+  <link rel="icon" href="CSS/favicon.png" alt="ファビコンです">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <header id="top_point">
+  <!-- スマホ表示用のHTML -->
+    <div class="sp_container">
+      <div class="sp_logo">
+        <img src="CSS/logo1.png" alt="お店のロゴ" width="150" height="35">
+      </div>
+      <div class="menu_icon">
+        <span class="material-icons" id="open">menu</span>
+      </div>
+    </div>
+    <!-- PC用のメニューバー -->
+    <div class="img_container" id="top_img">
+      <img class="active" src="CSS/top1-1.jpg" alt="店内の風景" width="1200" height="800">
+      <img src="CSS/top2-1.jpg" alt="welcomeの看板" width="1200" height="800">
+      <img src="CSS/top3-1.jpg" alt="マグカップをを持ってる人" width="1200" height="800">
+    </div>
+    <!-- global-nav -->
+    <nav id="global-nav">
+      <div class="inner">
+        <ul class="global-list">
+          <img src="CSS/logo1.png" alt="お店のロゴ" width="200" height="48">
+          <li><a href="#top_point">TOP</a></li>
+          <li><a href="#menu_point">MENU</a></li>
+          <li><a href="#shop_point">SHOP</a></li>
+          <li><a href="#access_point">ACCESS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul id="close2">
+        <li><a href="#top_point">TOP</a></li>
+        <li><a href="#menu_point">MENU</a></li>
+        <li><a href="#shop_point">SHOP</a></li>
+        <li><a href="#access_point">ACCESS</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section class="content">
+      <h1 class="headline-type01" id="menu_point">MENU</h1>
+      <div class="menu_wrap">
+        <div class="menu_detail">
+          <div class="menu_image menu_drink">
+            <img src="CSS/drink3.png" alt="ブレンドコーヒー" width="450" height="450">
+          </div>
+          <dl class="text_area">
+          <dt class="name">
+            "ブレンドコーヒー"
+            <span>blend coffee</span>
+          </dt>
+          <dd class="comment">
+            <p>厳選のこだわり豆を使用。</p>
+            <p>芳醇な豆の香りをご堪能下さい。</p>
+          </dd>
+          <dd class="price">
+            ¥650+tax
+          </dd>
+        </dl>
+        </div>
+        <div class="menu_detail">
+          <div class="menu_image menu_drink">
+            <img src="CSS/drink4.png" alt="カフェラテ" width="440" height="440">
+          </div>
+          <dl class="text_area">
+            <dt class="name">
+              "カフェラテ"
+              <span>caffe latte</span>
+            </dt>
+            <dd class="comment">
+              <p>まるやかなミルクの</p>
+              <p>味わいをご堪能下さい。</p>
+            </dd>
+            <dd class="price">
+              ¥850+tax
+            </dd>
+          </dl>
+        </div>
+        <div class="menu_detail">
+          <div class="menu_image menu_tomato">
+            <img src="CSS/food2-2.png" alt="トマトパスタ" width="650" height="420">
+          </div>
+          <dl class="text_area">
+            <dt class="name">
+              "トマトパスタ"
+              <span>tomato pasta</span>
+            </dt>
+            <dd class="comment">
+              <p>ツナとトマト、オリーブバジルのパスタです。</p>
+            </dd>
+            <dd class="price">
+              ¥1,200+tax
+            </dd>
+          </dl>
+        </div>
+        <div class="menu_detail">
+          <div class="menu_image">
+            <img src="CSS/food3-2.png" alt="クリームパスタ" width="670" height="440">
+          </div>
+          <dl class="text_area">
+            <dt class="name">
+              "クリームパスタ"
+              <span>cream pasta</span>
+            </dt>
+            <dd class="comment">
+              <p>スッキーニとバジルチーズの<br>
+                クリームパスタです。</p>
+            </dd>
+            <dd class="price">
+              ¥1,200+tax
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="page_image">
+        <img src="CSS/shop1-1.jpg" alt="コーヒーマシン" width="1500" height="300">
+      </div>
+      <h1 class="headline-type01 hd_shop" id="shop_point">SHOP</h1>
+      <div class="shop_container">
+        <div class="shop_wrap">
+          <img src="CSS/top1-1.jpg" alt="店内の風景" width="800" height="600">
+          <img src="CSS/staff1-1.jpg" alt="犬が店員の服を着用してる" width="800" height="600">
+        </div>
+        <div class="shop_comment">
+          <p>店内は落ち着いた雰囲気で、広々とした空間となっており</p>
+          <p>運が良ければ、当店の看板犬がお出迎えいたします。</p>
+          <p>上記のメニュー以外のフードや、アルコールも充実してます。</p>
+          <p>お客様のご来店を、心よりお待ちしています。</p>
+        </div>
+      </div>
+      <h1 class="headline-type01 hd_access" id="access_point">ACCESS</h1>
+      <div class="address_date">
+        <div class="address_detail">
+          〒183-0013<br>
+          府中市小柳町４丁目<br>
+          最寄駅から徒歩３分<br>
+          Open:10:00-20:00 (L.o:19:00)<br>
+          Tel:03-0000-0000
+        </div>
+        <div class="address_map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1422.2054188932905!2d139.4977965419633!3d35.65559898099013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e5322ef7faab%3A0xe1d8ed4744ade93c!2z56u26ImH5aC05YmN6aeF!5e0!3m2!1sja!2sjp!4v1610514307497!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      (c)Coffe_Power.com powered by MakeWeb
+    </footer>
+  </main>
+  <script type="text/javascript" src="JS/main.js"></script>      <!--JSファイル読み込み-->
+</body>
+</html>
